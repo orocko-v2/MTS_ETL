@@ -1,0 +1,14 @@
+clickhouse-driver
+airflow-clickhouse-plugin
+requests
+pandas
+pyspark==3.5.3
+psycopg2-binary
+apache-airflow-providers-sqlite
+apache-airflow-providers-apache-spark
+apache-airflow-providers-postgres
+apache-airflow-providers-amazon
+dbt-core
+dbt-clickhouse 
+awscli 
+boto3
