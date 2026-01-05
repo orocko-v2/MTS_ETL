@@ -1,0 +1,11 @@
+dbt_click:
+  target: operations
+  outputs:
+    operations:
+      type: clickhouse
+      schema: mtsetl
+      host: clickhouse
+      port: 9000
+      user: admin
+      password: admin
+      secure: False

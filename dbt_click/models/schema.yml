@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: daily_expenses
+
+    columns:
+      - name: phone
+        tests:
+          - unique
+          - not_null
+      - name: name
+      - name: total_expense
+        tests:
+          - not_null
+
+  - name: monthly_expenses
+
+    columns:
+      - name: phone
+        tests:
+          - unique
+          - not_null
+      - name: name
+      - name: total_expense
+        tests:
+          - not_null
+
+sources:
+  - name: mtsetl
+    tables:
+      - name: operations
+      - name: workers
